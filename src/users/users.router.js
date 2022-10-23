@@ -10,7 +10,6 @@ require('../middlewares/auth.middleware')(passport)
 //? rutas raiz
 
 router.get('/', userServices.getAllUsers)
-router.post('/', userServices.registerUser)//Testing connection 
 
 //TODO el registerUser ira en la ruta /auth/register
 

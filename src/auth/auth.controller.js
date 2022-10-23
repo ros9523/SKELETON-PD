@@ -22,6 +22,9 @@ const loginUser = async (email, password) => {
     }
 }
 
+loginUser("ros952339@hotmail.com", "1234")
+.then(response => console.log(response))
+.catch(err=> console.log(err))
 
 
 module.exports = {

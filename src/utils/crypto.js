@@ -16,9 +16,9 @@ const comparePassword = (plainPassword, hashedPassword) => {
 }
 
 
-//? console.log(hashPassword('root'))
+console.log(hashPassword('123'))
 
-//? console.log(comparePassword('root', '$2b$10$QR1CpdOItQAqwKWpPDx2WeV5oDYPS34DTqGJuykaAYQfj2Dgz02my'))
+//console.log(comparePassword('root', '$2b$10$QR1CpdOItQAqwKWpPDx2WeV5oDYPS34DTqGJuykaAYQfj2Dgz02my'))
 
 module.exports = {
     hashPassword,

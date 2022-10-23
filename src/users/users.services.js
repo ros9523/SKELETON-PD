@@ -134,7 +134,7 @@ const patchMyUser=(req, res)=>{
 const deleteMyUser =(req, res) =>{
 const id= req.user.id
 
-usersControllers.updateUser(id, {status: 'inactive'})
+usersControllers.deleteUser(id, {status: 'inactive'})
 .then(()=>{
   res.status(200).json({message: "your user was deleted successfully"})
 }).catch(err=>{
