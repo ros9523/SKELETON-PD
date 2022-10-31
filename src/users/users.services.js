@@ -122,7 +122,7 @@ const patchMyUser=(req, res)=>{
     res.status(200).json({message: "your user was edited successfully"})
   }).catch(err=>{
 
-    res.status(400).son({message:err.message})
+    res.status(400).json({message:err.message})
   })
     }
 
@@ -138,7 +138,7 @@ usersControllers.deleteUser(id, {status: 'inactive'})
 .then(()=>{
   res.status(200).json({message: "your user was deleted successfully"})
 }).catch(err=>{
-   res.status(400).son({message:err.message})
+   res.status(400).json({message:err.message})
 });
 
 };

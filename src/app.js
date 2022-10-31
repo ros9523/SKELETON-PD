@@ -5,7 +5,8 @@ const {port} = require('./config')
 const authRouter = require('./auth/auth.router')
 const initModels = require('./models/initModels')
 const userRouter = require('./users/users.router')
-
+const conversationsRouter= require('./conversations/conversations.router')
+const messagesRouter= require('./messages/messages.router')
 const app = express()
 
 app.use(express.json())
@@ -37,6 +38,8 @@ app.get('/', (req, res)=>{
 
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/auth', authRouter)
+app.use('/api/v1/conversations', conversationsRouter, messagesRouter)
+
 
 
 app.listen(port, ()=>{

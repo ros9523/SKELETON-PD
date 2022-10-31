@@ -9,7 +9,7 @@ const config ={
         username:process.env.DB_USER  || 'postgres',
         password:process.env.DB_PASS || 'Ros9523@#' , 
         host:process.env.DB_HOST || 'localhost',
-        name:process.env.DB_NAME || 'skeleton1'
+        name:process.env.DB_NAME || 'chat'
     }
 }
 
